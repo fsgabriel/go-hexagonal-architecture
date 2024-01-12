@@ -1,8 +1,9 @@
 package application_test
 
 import (
-	"fsgabriel/go-hexagonal-architecture/application"
 	"testing"
+
+	"github.com/fsgabriel/go-hexagonal-architecture/application"
 
 	uuid "github.com/satori/go.uuid"
 	"github.com/stretchr/testify/assert"

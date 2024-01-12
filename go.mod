@@ -1,4 +1,4 @@
-module fsgabriel/go-hexagonal-architecture
+module github.com/fsgabriel/go-hexagonal-architecture
 
 go 1.21.6
 

@@ -2,7 +2,8 @@ package db
 
 import (
 	"database/sql"
-	"fsgabriel/go-hexagonal-architecture/application"
+
+	"github.com/fsgabriel/go-hexagonal-architecture/application"
 
 	_ "github.com/mattn/go-sqlite3"
 )

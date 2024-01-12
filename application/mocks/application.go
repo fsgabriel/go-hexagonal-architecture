@@ -10,7 +10,7 @@
 package mock_application
 
 import (
-	application "fsgabriel/go-hexagonal-architecture/application"
+	application "github.com/fsgabriel/go-hexagonal-architecture/application"
 	reflect "reflect"
 
 	gomock "go.uber.org/mock/gomock"

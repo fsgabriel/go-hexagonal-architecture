@@ -1,9 +1,10 @@
 package application_test
 
 import (
-	"fsgabriel/go-hexagonal-architecture/application"
-	mock_application "fsgabriel/go-hexagonal-architecture/application/mocks"
 	"testing"
+
+	"github.com/fsgabriel/go-hexagonal-architecture/application"
+	mock_application "github.com/fsgabriel/go-hexagonal-architecture/application/mocks"
 
 	"github.com/stretchr/testify/assert"
 	"go.uber.org/mock/gomock"
