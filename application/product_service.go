@@ -6,6 +6,12 @@ type ProductService struct {
 	Repository ProductPersistenceInterface
 }
 
+func NewProductService(repository ProductPersistenceInterface) *ProductService {
+	return &ProductService{
+		Repository: repository,
+	}
+}
+
 func (s *ProductService) Get(id string) (ProductInterface, error) {
 	product, err := s.Repository.Get(id)
 	if err != nil {
