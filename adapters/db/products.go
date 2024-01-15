@@ -78,7 +78,3 @@ func (p *ProductDb) update(product application.ProductInterface) (application.Pr
 
 	return product, nil
 }
-
-// Get(id string) (ProductInterface, error)
-
-// Save(product ProductInterface) (ProductInterface, error)
