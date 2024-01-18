@@ -1,24 +1,11 @@
+/*
+Copyright © 2024 NAME HERE <EMAIL ADDRESS>
+
+*/
 package main
 
-import (
-	"database/sql"
-	"fmt"
-
-	db2 "github.com/fsgabriel/go-hexagonal-architecture/adapters/db"
-	"github.com/fsgabriel/go-hexagonal-architecture/application"
-	_ "github.com/mattn/go-sqlite3"
-)
+import "github.com/fsgabriel/go-hexagonal-architecture/cmd"
 
 func main() {
-	db, err := sql.Open("sqlite3", ":memory")
-	if err != nil {
-		panic(err)
-	}
-	db2.Setup(db)
-	productDB := db2.NewProductDB(db)
-	productService := application.NewProductService(productDB)
-
-	p, _ := productService.Create("product exemplo", 10)
-	x, _ := productService.Get(p.GetID())
-	fmt.Println(x)
+	cmd.Execute()
 }

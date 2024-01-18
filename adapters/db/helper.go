@@ -7,6 +7,7 @@ import (
 
 func Setup(db *sql.DB) {
 	CreateTable(db)
+	CreateProduct(db)
 }
 
 func CreateTable(db *sql.DB) {
